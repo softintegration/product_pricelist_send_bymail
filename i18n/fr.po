@@ -80,6 +80,6 @@ msgstr "{{ (object.name or '').replace('/','_') }}"
 #. module: product_pricelist_send_bymail
 #: model:mail.template,subject:product_pricelist_send_bymail.email_template_product_pricelist
 msgid ""
-"{{ object.company_id.name }} Pricelist (Ref {{ object.name or 'n/a' }})"
+"{{ object.company_id.name or user.company_id.name}} Pricelist (Ref {{ object.name or 'n/a' }})"
 msgstr ""
-"{{ object.company_id.name }} Liste de prix (Ref {{ object.name or 'n/a' }})"
+"{{ object.company_id.name or user.company_id.name}} Liste de prix (Ref {{ object.name or 'n/a' }})"
